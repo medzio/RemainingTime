@@ -25,6 +25,7 @@ body {
   border-radius: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
   overflow: hidden;
+  transition: transform 0.3s;
 }
 
 .image-section {
@@ -113,8 +114,11 @@ h3 {
 }
 
 .active {
-  transform: translateX(370px);
+  transform: translateX(280px);
   opacity: 1;
+}
+.activeBody {
+  transform: translateX(-100px);
 }
 
 h1 {

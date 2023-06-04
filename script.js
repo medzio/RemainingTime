@@ -1,6 +1,7 @@
 const settings = document.querySelector('.settings');
 const settingsBtn = document.querySelector('.settings-btn');
 const imageSection = document.querySelector('.image-section');
+const appBody = document.querySelector('.app-body')
 
 const eventName = document.querySelector('#event-name');
 const eventDay = document.querySelector('#event-day');
@@ -43,6 +44,7 @@ const appUpdate = () => {
 
 settingsBtn.addEventListener('click', () => {
     settings.classList.toggle('active');
+    appBody.classList.toggle('activeBody');
 })
 saveBtn.addEventListener('click', appUpdate);
 
